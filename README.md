@@ -6,7 +6,7 @@
 
 ## iOS Development in Objective-C
 
-Mountain View (Remote Class), May 2020
+Mountain View (Remote Class) — May, 2020
 
 
 ### Part 1: Objective-C Programming

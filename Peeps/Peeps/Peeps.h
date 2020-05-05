@@ -3,13 +3,5 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Dog : NSObject <NSCopying> {
-    NSString *_name;
-}
-
-- (NSString *)name;
-- (void)setName:(NSString *)newValue;
-
-- (void)bark;
-
-@end
+#import "Person.h"
+#import "Dog.h"

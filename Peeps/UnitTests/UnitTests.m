@@ -2,13 +2,12 @@
 // See LICENSE.txt for this project's licensing information.
 
 #import <XCTest/XCTest.h>
-#import "Person.h"
-#import "Dog.h"
+#import <Peeps/Peeps.h>
 
-@interface UnitTests : XCTestCase
+@interface PersonTests : XCTestCase
 @end
 
-@implementation UnitTests
+@implementation PersonTests
 
 - (void)testCreatePerson {
     Person *fred = [[Person alloc] init];
@@ -18,6 +17,18 @@
     [fred setLastName:@"Smith"];
     [fred setAge:42];
     NSLog(@"Fred's name is %@", fred);
+}
+
+- (void)testDesignatedInitializer {
+    Person *fred = [[Person alloc] initWithFirstName:@"Fred"
+                                            lastName:@"Smith"
+                                                 age: 42];
+    NSLog(@"%@", fred);
+    
+    Person *barb = [Person personWithFirstName:@"Barbara"
+                                      lastName:@"Smith"
+                                           age:32];
+    NSLog(@"%@", barb);
 }
 
 - (void)testBarkLikeADog {

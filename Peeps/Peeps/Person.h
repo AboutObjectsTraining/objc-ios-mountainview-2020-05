@@ -9,8 +9,20 @@
     NSString *_firstName;
     NSString *_lastName;
     NSInteger _age;
+    NSUInteger _rating;
     Dog *_dog;
 }
+
+- (id)initWithFirstName:(NSString *)firstName
+               lastName:(NSString *)lastName;
+
++ (id)personWithFirstName:(NSString *)firstName
+                 lastName:(NSString *)lastName
+                      age:(NSInteger)age;
+
+- (id)initWithFirstName:(NSString *)firstName
+               lastName:(NSString *)lastName
+                    age:(NSInteger)age;
 
 - (NSString *)firstName;
 - (void)setFirstName:(NSString *)newValue;
@@ -25,5 +37,10 @@
 
 - (Dog *)dog;
 - (void)setDog:(Dog *)newValue;
+
+- (NSUInteger)rating;
+- (void)setRating:(NSUInteger)newValue;
+
+- (void)display;
 
 @end

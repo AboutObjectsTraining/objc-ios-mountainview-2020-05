@@ -16,4 +16,16 @@
     printf("\nWoof! Woof!\n\n");
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@", [self name]];
+}
+
+- (id)copyWithZone:(NSZone *)zone {
+    Dog *newDog = [[[self class] allocWithZone:zone] init];
+    newDog->_name = [[self name] copy];
+//    newDog->isa = [NSString class];
+    return newDog;
+}
+
 @end

@@ -5,6 +5,10 @@
 
 const NSUInteger MaxRating = 5;
 
+@interface Person ()
+@property (readonly, nonatomic) NSString *ratingStars;
+@end
+
 @implementation Person
 
 // Convenience init
@@ -35,73 +39,42 @@ const NSUInteger MaxRating = 5;
     if ([super respondsToSelector:aSelector]) {
         return YES;
     }
-    return [[self dog] respondsToSelector:aSelector];
+    return [self.dog respondsToSelector:aSelector];
 }
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
-    if ([[self dog] respondsToSelector:aSelector]) {
-        return [self dog];
+    if ([self.dog respondsToSelector:aSelector]) {
+        return self.dog;
     }
     return [super forwardingTargetForSelector:aSelector];
 }
 
-- (NSString *)firstName {
-    return _firstName;
-}
-- (void)setFirstName:(NSString *)newValue {
-    _firstName = [newValue copy];
-}
-
-- (NSString *)lastName {
-    return _lastName;
-}
-- (void)setLastName:(NSString *)newValue {
-    _lastName = [newValue copy];
-}
-
 - (NSString *)fullName {
-    return [NSString stringWithFormat:@"%@ %@", [self firstName], [self lastName]];
-}
-
-- (NSInteger)age {
-    return _age;
-}
-- (void)setAge:(NSInteger)newValue {
-    _age = newValue;
-}
-
-- (Dog *)dog {
-    return _dog;
-}
-- (void)setDog:(Dog *)newValue {
-    _dog = newValue;
+    return [NSString stringWithFormat:@"%@ %@", self.firstName, self.lastName];
 }
 
 - (void)display {
-    printf("%s\n", [[self description] UTF8String]);
+    printf("%s\n", self.description.UTF8String);
 }
 
-- (NSUInteger)rating {
-    return _rating;
-}
 - (void)setRating:(NSUInteger)newValue {
     _rating = newValue > MaxRating ? MaxRating : newValue;
 }
 
 - (NSString *)ratingStars {
-    NSUInteger rating = [self rating];
+    NSUInteger rating = self.rating;
     if (rating == 0) return @"-";
     return [@"★★★★★" substringToIndex:rating];
 }
 
 - (NSString *)description
 {
-    NSString *stars = [self ratingStars];
+    NSString *stars = self.ratingStars;
     stars = [stars stringByPaddingToLength:MaxRating
                                 withString:@" "
                            startingAtIndex:0];
     
-    return [NSString stringWithFormat:@"%@  %@, age: %@", stars, [self fullName], @([self age])];
+    return [NSString stringWithFormat:@"%@  %@, age: %@", stars, self.fullName, @(self.age)];
 }
 
 @end

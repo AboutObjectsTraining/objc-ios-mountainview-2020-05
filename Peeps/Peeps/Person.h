@@ -5,13 +5,7 @@
 
 @class Dog;
 
-@interface Person : NSObject {
-    NSString *_firstName;
-    NSString *_lastName;
-    NSInteger _age;
-    NSUInteger _rating;
-    Dog *_dog;
-}
+@interface Person : NSObject
 
 - (id)initWithFirstName:(NSString *)firstName
                lastName:(NSString *)lastName;
@@ -24,22 +18,12 @@
                lastName:(NSString *)lastName
                     age:(NSInteger)age;
 
-- (NSString *)firstName;
-- (void)setFirstName:(NSString *)newValue;
-
-- (NSString *)lastName;
-- (void)setLastName:(NSString *)newValue;
-
-- (NSString *)fullName;
-
-- (NSInteger)age;
-- (void)setAge:(NSInteger)newValue;
-
-- (Dog *)dog;
-- (void)setDog:(Dog *)newValue;
-
-- (NSUInteger)rating;
-- (void)setRating:(NSUInteger)newValue;
+@property (copy, nonatomic) NSString *firstName;
+@property (copy, nonatomic) NSString *lastName;
+@property (readonly, nonatomic) NSString *fullName;
+@property (assign, nonatomic) NSInteger age;
+@property (strong, nonatomic) Dog *dog;
+@property (assign, nonatomic) NSUInteger rating;
 
 - (void)display;
 

@@ -11,11 +11,17 @@
 
 - (void)testCreatePerson {
     Person *fred = [[Person alloc] init];
-    [fred setFirstName:@"Frederick"];
-    NSLog(@"Fred's first name is %@", [fred firstName]);
     
-    [fred setLastName:@"Smith"];
-    [fred setAge:42];
+    fred.firstName = @"Frederick";
+//    [fred setFirstName:@"Frederick"];
+    
+    NSLog(@"Fred's first name is %@", fred.firstName);
+    
+    fred.lastName = @"Smith";
+    fred.age = 42;
+//    [fred setLastName:@"Smith"];
+//    [fred setAge:42];
+    
     NSLog(@"Fred's name is %@", fred);
 }
 
@@ -90,7 +96,7 @@
 }
 
 - (void)testPart04 {
-    NSArray *people = @[
+    NSArray<Person *> *people = @[
         [Person personWithFirstName:@"Barbara" lastName:@"Smith" age:32],
         [Person personWithFirstName:@"Fred" lastName:@"Smith" age:37],
         [Person personWithFirstName:@"Dee" lastName:@"Jones" age:42],
@@ -98,7 +104,9 @@
         [Person personWithFirstName:@"Mel" lastName:@"Blank" age:27],
     ];
     
-    [people[0] setRating:0];
+    people[0].rating = 0;
+//    [people[0] setRating:0];
+    
     [people[1] setRating:3];
     [people[2] setRating:5];
     [people[3] setRating:3];

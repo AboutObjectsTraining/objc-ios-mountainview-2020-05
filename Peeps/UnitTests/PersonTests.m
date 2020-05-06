@@ -23,6 +23,8 @@
 //    [fred setAge:42];
     
     NSLog(@"Fred's name is %@", fred);
+    
+    XCTAssert(fred.age == 42);
 }
 
 - (void)testDesignatedInitializer {

@@ -13,6 +13,7 @@
 		B4CF16E6246236F100CF213C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF16E5246236F100CF213C /* main.m */; };
 		B4CF16EE246240EC00CF213C /* CLNCoolViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF16ED246240EC00CF213C /* CLNCoolViewCell.m */; };
 		B4CF16F1246242D900CF213C /* CLNCoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF16F0246242D900CF213C /* CLNCoolViewController.m */; };
+		B4CF16F92463683400CF213C /* UnitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF16F82463683400CF213C /* UnitTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,10 +28,20 @@
 		B4CF16ED246240EC00CF213C /* CLNCoolViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewCell.m; sourceTree = "<group>"; };
 		B4CF16EF246242D900CF213C /* CLNCoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLNCoolViewController.h; sourceTree = "<group>"; };
 		B4CF16F0246242D900CF213C /* CLNCoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLNCoolViewController.m; sourceTree = "<group>"; };
+		B4CF16F62463683400CF213C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CF16F82463683400CF213C /* UnitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnitTests.m; sourceTree = "<group>"; };
+		B4CF16FA2463683400CF213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B4CF16CD246236EF00CF213C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF16F32463683400CF213C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				B4CF16D2246236EF00CF213C /* Coolness */,
+				B4CF16F72463683400CF213C /* UnitTests */,
 				B4CF16D1246236EF00CF213C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				B4CF16D0246236EF00CF213C /* Coolness.app */,
+				B4CF16F62463683400CF213C /* UnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,6 +84,15 @@
 				B4CF16E5246236F100CF213C /* main.m */,
 			);
 			path = Coolness;
+			sourceTree = "<group>";
+		};
+		B4CF16F72463683400CF213C /* UnitTests */ = {
+			isa = PBXGroup;
+			children = (
+				B4CF16F82463683400CF213C /* UnitTests.m */,
+				B4CF16FA2463683400CF213C /* Info.plist */,
+			);
+			path = UnitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +115,23 @@
 			productReference = B4CF16D0246236EF00CF213C /* Coolness.app */;
 			productType = "com.apple.product-type.application";
 		};
+		B4CF16F52463683400CF213C /* UnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4CF16FB2463683400CF213C /* Build configuration list for PBXNativeTarget "UnitTests" */;
+			buildPhases = (
+				B4CF16F22463683400CF213C /* Sources */,
+				B4CF16F32463683400CF213C /* Frameworks */,
+				B4CF16F42463683400CF213C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTests;
+			productName = UnitTests;
+			productReference = B4CF16F62463683400CF213C /* UnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -103,6 +142,9 @@
 				ORGANIZATIONNAME = "About Objects";
 				TargetAttributes = {
 					B4CF16CF246236EF00CF213C = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B4CF16F52463683400CF213C = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -121,6 +163,7 @@
 			projectRoot = "";
 			targets = (
 				B4CF16CF246236EF00CF213C /* Coolness */,
+				B4CF16F52463683400CF213C /* UnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -135,6 +178,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B4CF16F42463683400CF213C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,6 +196,14 @@
 				B4CF16EE246240EC00CF213C /* CLNCoolViewCell.m in Sources */,
 				B4CF16E6246236F100CF213C /* main.m in Sources */,
 				B4CF16F1246242D900CF213C /* CLNCoolViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4CF16F22463683400CF213C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4CF16F92463683400CF213C /* UnitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +363,40 @@
 			};
 			name = Release;
 		};
+		B4CF16FC2463683400CF213C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B4CF16FD2463683400CF213C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = UnitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aboutobjects.training.UnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +414,15 @@
 			buildConfigurations = (
 				B4CF16EA246236F100CF213C /* Debug */,
 				B4CF16EB246236F100CF213C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4CF16FB2463683400CF213C /* Build configuration list for PBXNativeTarget "UnitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4CF16FC2463683400CF213C /* Debug */,
+				B4CF16FD2463683400CF213C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

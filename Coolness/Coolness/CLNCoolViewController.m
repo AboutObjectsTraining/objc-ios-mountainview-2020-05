@@ -9,16 +9,19 @@
 - (void)loadView {
     UIView *backgroundView = [[UIView alloc] init];
     self.view = backgroundView;
-    backgroundView.backgroundColor = UIColor.brownColor;
     
-    UIView *subview1 = [[CLNCoolViewCell alloc] initWithFrame:CGRectMake(20, 100, 200, 40)];
+    CLNCoolViewCell *subview1 = [[CLNCoolViewCell alloc] initWithFrame:CGRectMake(20, 100, 200, 40)];
+    CLNCoolViewCell *subview2 = [[CLNCoolViewCell alloc] initWithFrame:CGRectMake(50, 160, 200, 40)];
+    
+    subview1.text = @"Hello World! 🌎🌏🌍";
+    subview2.text = @"Cool Cells FTW!!! 🥂🍾";
+    
     [backgroundView addSubview:subview1];
-    subview1.backgroundColor = UIColor.purpleColor;
-    
-    UIView *subview2 = [[CLNCoolViewCell alloc] initWithFrame:CGRectMake(50, 160, 200, 40)];
     [backgroundView addSubview:subview2];
+    
+    backgroundView.backgroundColor = UIColor.brownColor;
+    subview1.backgroundColor = UIColor.purpleColor;
     subview2.backgroundColor = UIColor.orangeColor;
-
 }
 
 @end

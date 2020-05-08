@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B4CF17492464C8EB00CF213C /* RELAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF17482464C8EB00CF213C /* RELAppDelegate.m */; };
 		B4CF17522464C8EB00CF213C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF17502464C8EB00CF213C /* Main.storyboard */; };
-		B4CF17542464C8EE00CF213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CF17532464C8EE00CF213C /* Assets.xcassets */; };
 		B4CF17572464C8EE00CF213C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF17552464C8EE00CF213C /* LaunchScreen.storyboard */; };
 		B4CF175A2464C8EE00CF213C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF17592464C8EE00CF213C /* main.m */; };
 		B4CF17622464E11900CF213C /* RELReadingListController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF17612464E11900CF213C /* RELReadingListController.m */; };
@@ -33,6 +32,11 @@
 		B4CF17962465F9B200CF213C /* RELEditBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF17952465F9B200CF213C /* RELEditBookController.m */; };
 		B4CF17992465FD9B00CF213C /* UIStoryboardSegue+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF17982465FD9B00CF213C /* UIStoryboardSegue+RELAdditions.m */; };
 		B4CF179C24660E7000CF213C /* RELAddBookController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF179B24660E7000CF213C /* RELAddBookController.m */; };
+		B4CF179E24661DBD00CF213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4CF179D24661DBD00CF213C /* Assets.xcassets */; };
+		B4CF17A12466202500CF213C /* UIImageView+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF17A02466202500CF213C /* UIImageView+RELAdditions.m */; };
+		B4CF17A42466229300CF213C /* UIImage+RELAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = B4CF17A32466229300CF213C /* UIImage+RELAdditions.m */; };
+		B4CF17A72466242100CF213C /* AddBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF17A52466242100CF213C /* AddBook.storyboard */; };
+		B4CF17A9246624A100CF213C /* ViewAndEditBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4CF17A8246624A100CF213C /* ViewAndEditBook.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +68,6 @@
 		B4CF17472464C8EB00CF213C /* RELAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAppDelegate.h; sourceTree = "<group>"; };
 		B4CF17482464C8EB00CF213C /* RELAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAppDelegate.m; sourceTree = "<group>"; };
 		B4CF17512464C8EB00CF213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B4CF17532464C8EE00CF213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4CF17562464C8EE00CF213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4CF17582464C8EE00CF213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4CF17592464C8EE00CF213C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -94,6 +97,13 @@
 		B4CF17982465FD9B00CF213C /* UIStoryboardSegue+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStoryboardSegue+RELAdditions.m"; sourceTree = "<group>"; };
 		B4CF179A24660E7000CF213C /* RELAddBookController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RELAddBookController.h; sourceTree = "<group>"; };
 		B4CF179B24660E7000CF213C /* RELAddBookController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RELAddBookController.m; sourceTree = "<group>"; };
+		B4CF179D24661DBD00CF213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B4CF179F2466202500CF213C /* UIImageView+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RELAdditions.h"; sourceTree = "<group>"; };
+		B4CF17A02466202500CF213C /* UIImageView+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RELAdditions.m"; sourceTree = "<group>"; };
+		B4CF17A22466229300CF213C /* UIImage+RELAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+RELAdditions.h"; sourceTree = "<group>"; };
+		B4CF17A32466229300CF213C /* UIImage+RELAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+RELAdditions.m"; sourceTree = "<group>"; };
+		B4CF17A62466242100CF213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReadingList/Base.lproj/AddBook.storyboard; sourceTree = "<group>"; };
+		B4CF17A8246624A100CF213C /* ViewAndEditBook.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ViewAndEditBook.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +128,8 @@
 		B4CF173B2464C8EB00CF213C = {
 			isa = PBXGroup;
 			children = (
+				B4CF17A8246624A100CF213C /* ViewAndEditBook.storyboard */,
+				B4CF17A52466242100CF213C /* AddBook.storyboard */,
 				B4CF17462464C8EB00CF213C /* ReadingList */,
 				B4CF176C2465D9C400CF213C /* ReadingListModel */,
 				B4CF17452464C8EB00CF213C /* Products */,
@@ -148,8 +160,12 @@
 				B4CF179B24660E7000CF213C /* RELAddBookController.m */,
 				B4CF17972465FD9B00CF213C /* UIStoryboardSegue+RELAdditions.h */,
 				B4CF17982465FD9B00CF213C /* UIStoryboardSegue+RELAdditions.m */,
+				B4CF179F2466202500CF213C /* UIImageView+RELAdditions.h */,
+				B4CF17A02466202500CF213C /* UIImageView+RELAdditions.m */,
+				B4CF17A22466229300CF213C /* UIImage+RELAdditions.h */,
+				B4CF17A32466229300CF213C /* UIImage+RELAdditions.m */,
 				B4CF17502464C8EB00CF213C /* Main.storyboard */,
-				B4CF17532464C8EE00CF213C /* Assets.xcassets */,
+				B4CF179D24661DBD00CF213C /* Assets.xcassets */,
 				B4CF17552464C8EE00CF213C /* LaunchScreen.storyboard */,
 				B4CF17582464C8EE00CF213C /* Info.plist */,
 				B4CF17592464C8EE00CF213C /* main.m */,
@@ -278,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4CF17572464C8EE00CF213C /* LaunchScreen.storyboard in Resources */,
-				B4CF17542464C8EE00CF213C /* Assets.xcassets in Resources */,
+				B4CF17A72466242100CF213C /* AddBook.storyboard in Resources */,
+				B4CF17A9246624A100CF213C /* ViewAndEditBook.storyboard in Resources */,
+				B4CF179E24661DBD00CF213C /* Assets.xcassets in Resources */,
 				B4CF17522464C8EB00CF213C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +322,9 @@
 				B4CF175A2464C8EE00CF213C /* main.m in Sources */,
 				B4CF17652464E2D100CF213C /* RELViewBookController.m in Sources */,
 				B4CF17962465F9B200CF213C /* RELEditBookController.m in Sources */,
+				B4CF17A12466202500CF213C /* UIImageView+RELAdditions.m in Sources */,
 				B4CF179C24660E7000CF213C /* RELAddBookController.m in Sources */,
+				B4CF17A42466229300CF213C /* UIImage+RELAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +366,14 @@
 				B4CF17562464C8EE00CF213C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B4CF17A52466242100CF213C /* AddBook.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B4CF17A62466242100CF213C /* Base */,
+			);
+			name = AddBook.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
